@@ -1,0 +1,48 @@
+Alteração de odds
+
+https://bookodds.com/en/history-charts?market=total&s=1&p=0&e=13563578&tz=%2B00%3A00&of=decimal      #Over
+https://bookodds.com/en/history-charts?market=total&s=2&p=0&e=13563419&tz=%2B00%3A00&of=decimal      #Under
+
+https://bookodds.com/en/history-charts?market=handicap&s=1&p=0&e=13563419&tz=%2B00%3A00&of=decimal   #Home
+https://bookodds.com/en/history-charts?market=handicap&s=2&p=0&e=13563419&tz=%2B00%3A00&of=decimal   #Away
+
+https://bookodds.com/en/history-charts?market=moneyline&s=1&p=0&e=13563419&tz=%2B00%3A00&of=decimal  #1
+https://bookodds.com/en/history-charts?market=moneyline&s=3&p=0&e=13563419&tz=%2B00%3A00&of=decimal  #X
+https://bookodds.com/en/history-charts?market=moneyline&s=2&p=0&e=13563419&tz=%2B00%3A00&of=decimal  #2
+
+p=0  #Fulltime
+p=1  #Halftime
+
+
+
+
+data=JSON.parse((regex.exec(res))[1]);
+
+data=[
+  {datetime: "2018-09-19 07:57:02", line0: 3, price0: "1.952"},
+  {datetime: "2018-09-19 08:14:01", line0: "", price0: "1.917"},
+  {datetime: "2018-09-19 08:38:02", line0: "", price0: "1.925"},
+  {datetime: "2018-09-19 08:47:01", line0: "", price0: "1.877"},
+  {datetime: "2018-09-19 09:41:01", line0: "", price0: "1.909"},
+  {datetime: "2018-09-19 10:26:01", line0: "", price0: "1.877"},
+  {datetime: "2018-09-19 10:36:01", line0: "", price0: "1.925"},
+  {datetime: "2018-09-19 10:49:01", line0: "", price0: "1.961"},
+  {datetime: "2018-09-19 10:50:02", line0: "", price0: "1.952"},
+  {datetime: "2018-09-19 10:51:02", line0: "", price0: "1.934"},
+  {datetime: "2018-09-19 10:55:01", line0: "", price0: "1.980"},
+  {datetime: "2018-09-19 10:57:01", line0: "", price0: "1.970"},
+  {datetime: "2018-09-19 11:14:02", line0: "", price0: "1.943"},
+  {datetime: "2018-09-19 11:24:02", line0: "", price0: "1.925"},
+  {datetime: "2018-09-19 11:25:02", line0: "", price0: "1.800"},
+  {datetime: "2018-09-19 11:29:02", line0: "", price0: "1.813"},
+  {datetime: "2018-09-19 11:32:01", line0: "", price0: "1.813"},
+  {datetime: "2018-09-19 11:37:01", line0: "", price0: "1.877"},
+  {datetime: "2018-09-19 11:38:01", line0: "", price0: "1.925"},
+  {datetime: "2018-09-19 11:39:02", line0: "", price0: "1.934"},
+  {datetime: "2018-09-19 11:41:02", line0: "", price0: "1.970"},
+  {datetime: "2018-09-19 11:48:02", line0: "", price0: "1.980"},
+  {datetime: "2018-09-19 11:51:02", line0: "", price0: "1.909"},
+  {datetime: "2018-09-19 11:54:01", line0: 3.25, price0: "2.030"},
+  {datetime: "2018-09-19 11:56:02", line0: 3, price0: "1.813"},
+  {datetime: "2018-09-19 11:57:02",line0: 3.25, price0: "2.020"}
+]
