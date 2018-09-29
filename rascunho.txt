@@ -16,6 +16,54 @@ p=1  #Halftime
 
 
 
+
+
+
+
+var url='https://bookodds.com/en/history-charts?market=handicap&s=1&p=0&e=13563419&tz=%2B00%3A00&of=decimal';
+$.get(url,function(res){
+	regex=/draw_chart\((.*)\);/gm;
+	data=JSON.parse((regex.exec(res))[1]);
+	
+	var nivel='';
+	for(var i=0; i<data.length; i++){
+		if( data[i].line0!='') {
+			nivel=data[i].line0;
+		}
+		else{
+			data[i].line0=nivel;
+		}
+	}
+	
+	
+	data={
+		market: (/market=([0-9a-z]*)&/gm).exec(url)[1],
+		s: (/s=([0-9a-z]*)&/gm).exec(url)[1],
+		p: (/p=([0-9a-z]*)&/gm).exec(url)[1],
+		odds: data
+	};
+	
+	console.log(data);
+	$.post('https://bot-ao.com/bookodds/insert_odds.php', {data: JSON.stringify(data)}, function(res1){
+		console.log(res1);
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 data=JSON.parse((regex.exec(res))[1]);
 
 data=[
